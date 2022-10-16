@@ -1,0 +1,202 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+  --primary-color: yellow;
+  --secondary-color: rgb(167, 167, 7);
+  --bg-primary: #38031cd0;
+  --primary-font:'Work Sans', sans-serif;;
+  --danger-color: rgb(245, 84, 84);
+  --success-color: #28a745;
+}
+
+/* OVERAL DISPLAY */
+html, body{
+  font-family: var(--primary-font);
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+/* lists */
+ul{
+  list-style: none;
+}
+/* headings */
+
+/* paragraphs */
+
+/* ALERTS*/
+.alert{
+  font-size: .7rem;
+  padding: .3rem .5rem;
+  color: #fff;
+  text-align: center;
+  background: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+/* priority-colors */
+.error{ background: var(--danger-color); }
+
+.success{ background: var(--success-color); }
+
+
+/* LAYOUT STRUCTURE */
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+
+/* TEXT */
+.text-primary{
+  color: var(--primary-color);
+}
+
+
+/* BUTTONS */
+/* basic button */
+.btn{
+  display: inline-block;
+  font-size: .8rem;
+  color: #fff ;
+  background: var(--light-primary);
+  padding: .5rem 1rem;
+  border: none;
+  font-family: var(--primary-font);
+  border-radius: .2rem;
+}
+
+.btn:hover{
+  background: var(--light-primary);
+}
+
+.btn-light{
+  background: rgb(214, 213, 213);
+  color: #000;
+}
+
+.btn-light:hover{
+  background: rgb(201, 199, 199);
+  cursor: pointer;
+}
+
+/* main */
+/* main */
+#main{
+  background: var(--bg-primary);
+  color: #fff;
+  height: 100vh;
+}
+
+#main ::before{
+  content: '';
+  background: url('event2.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#main .main-container #box .box-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+#main .main-container #box .box-container #input .heading{
+  color: var(--primary-color);
+  text-align: center !important;
+}
+
+#main .main-container #box .box-container #input #form-area #form .form-area{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#main .main-container #box .box-container #input #form-area #form .form-area label{
+  font-weight: bold;
+}
+
+#main .main-container #box .box-container #input #form-area #form .form-area input[type=text],
+#main .main-container #box .box-container #input #form-area #form .form-area input[type=number]{
+  padding: .5rem 6rem .5rem .5rem;
+  opacity: 0.7;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  border: none;
+}
+
+#main .main-container #box .box-container #input #form-area #form .form-area input[type=text],
+#main .main-container #box .box-container #input #form-area #form .form-area input[type=number]:focus{
+  outline: none;
+}
+
+#main .main-container #box .box-container #input #form-area #form .form-area input[type=submit]{
+  font-size: .8rem;
+  font-weight: bold;
+  color: #000 ;
+  background: yellow;
+  padding: .5rem 1rem;
+  border: none;
+  font-family: var(--primary-font);
+  border-radius: .2rem;
+  cursor: pointer;
+}
+
+#main .main-container #box .box-container #input #form-area #form .form-area input[type=submit]:hover{
+  background: var(--secondary-color);
+}
+
+hr{
+  margin: 2rem 16rem;
+}
+
+/* table */
+/* table */
+.output-table{
+  /* table-layout: fixed; */
+  border-collapse: collapse;
+  width: 70%;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.output-table thead{
+  background: rgba(99, 96, 96, 0.315);
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.output-table tbody{
+  background: rgba(245, 242, 242, 0.479);
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid white;
+}
+
+td{
+  color: #000;
+}
